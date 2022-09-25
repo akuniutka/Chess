@@ -32,7 +32,7 @@ public class Bishop extends ChessPiece {
         int stepForColumns = toColumn > column ? 1 : -1;
         int currentLine = line + stepForLines;
         int currentColumn = column + stepForColumns;
-        while (currentLine < toLine) {
+        while (currentLine != toLine) {
             if (chessBoard.board[currentLine][currentColumn] != null) {
                 return false;
             }

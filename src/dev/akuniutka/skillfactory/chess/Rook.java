@@ -17,29 +17,8 @@ public class Rook extends ChessPiece {
         if (isOutsideOfBoard(toLine, toColumn)) return false;
         if (isOccupiedBySameColor(chessBoard, toLine, toColumn)) return false;
 
-        if (toLine == line) {
-            int stepForColumns = toColumn > column ? 1 : -1;
-            int currentColumn = column + stepForColumns;
-            while (currentColumn != toColumn) {
-                if (chessBoard.board[line][currentColumn] != null) {
-                    return false;
-                }
-                currentColumn += stepForColumns;
-            }
-            return true;
-        } else if (toColumn == column) {
-            int stepForLines = toLine > line ? 1 : -1;
-            int currentLine = line + stepForLines;
-            while (currentLine != toLine) {
-                if (chessBoard.board[currentLine][column] != null) {
-                    return false;
-                }
-                currentLine += stepForLines;
-            }
-            return true;
-        } else {
-            return false;
-        }
+        return isAccessibleByHorizontal(chessBoard, line, column, toLine, toColumn) ||
+                isAccessibleByVertical(chessBoard, line, column, toLine, toColumn);
     }
 
     @Override
@@ -55,5 +34,29 @@ public class Rook extends ChessPiece {
         ChessPiece chessPiece = chessBoard.board[line][column];
         if (chessPiece == null) return false;
         return color.equals(chessPiece.getColor());
+    }
+
+    private boolean isAccessibleByHorizontal(ChessBoard chessBoard, int line, int column, int toLine, int toColumn) {
+        if (toLine != line) return false;
+
+        int stepForColumns = toColumn > column ? 1 : -1;
+        int currentColumn = column + stepForColumns;
+        while (currentColumn != toColumn) {
+            if (chessBoard.board[line][currentColumn] != null) return false;
+            currentColumn += stepForColumns;
+        }
+        return true;
+    }
+
+    private boolean isAccessibleByVertical(ChessBoard chessBoard, int line, int column, int toLine, int toColumn) {
+        if (toColumn != column) return false;
+
+        int stepForLines = toLine > line ? 1 : -1;
+        int currentLine = line + stepForLines;
+        while (currentLine != toLine) {
+            if (chessBoard.board[currentLine][column] != null) return false;
+            currentLine += stepForLines;
+        }
+        return true;
     }
 }

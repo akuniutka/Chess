@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e4f4334-6c96-461b-8f6f-bb2244d30498" name="Changes" comment="Class Bishop added.">
+    <list default="true" id="2e4f4334-6c96-461b-8f6f-bb2244d30498" name="Changes" comment="Class Rook added.">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +44,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664113194817</updated>
-      <workItem from="1664113196557" duration="1408000" />
+      <workItem from="1664113196557" duration="2358000" />
     </task>
     <task id="LOCAL-00001" summary="Abstract ChessPiece class created.">
       <created>1664113451913</created>
@@ -73,7 +74,21 @@
       <option name="project" value="LOCAL" />
       <updated>1664113662389</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Corrected while loop in class Bishop.">
+      <created>1664115222288</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1664115222288</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Class Rook added.">
+      <created>1664115439191</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1664115439191</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +110,8 @@
     <MESSAGE value="Class Horse added." />
     <MESSAGE value="Class Pawn added." />
     <MESSAGE value="Class Bishop added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Class Bishop added." />
+    <MESSAGE value="Corrected while loop in class Bishop." />
+    <MESSAGE value="Class Rook added." />
+    <option name="LAST_COMMIT_MESSAGE" value="Class Rook added." />
   </component>
 </project>

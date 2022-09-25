@@ -19,22 +19,7 @@ public class Bishop extends ChessPiece {
         if (isOutsideOfBoard(toLine, toColumn)) return false;
         if (isOccupiedBySameColor(chessBoard, toLine, toColumn)) return false;
 
-        if (Math.abs(toLine - line) != Math.abs(toColumn - column)) {
-            return false;
-        }
-
-        int stepForLines = toLine > line ? 1 : -1;
-        int stepForColumns = toColumn > column ? 1 : -1;
-        int currentLine = line + stepForLines;
-        int currentColumn = column + stepForColumns;
-        while (currentLine != toLine) {
-            if (chessBoard.board[currentLine][currentColumn] != null) {
-                return false;
-            }
-            currentLine += stepForLines;
-            currentColumn += stepForColumns;
-        }
-        return true;
+        return isAccessibleByDiagonal(chessBoard, line, column, toLine, toColumn);
     }
 
     @Override
@@ -50,5 +35,20 @@ public class Bishop extends ChessPiece {
         ChessPiece chessPiece = chessBoard.board[line][column];
         if (chessPiece == null) return false;
         return color.equals(chessPiece.getColor());
+    }
+
+    private boolean isAccessibleByDiagonal(ChessBoard chessBoard, int line, int column, int toLine, int toColumn) {
+        if (Math.abs(toLine - line) != Math.abs(toColumn - column)) return false;
+
+        int stepForLines = toLine > line ? 1 : -1;
+        int stepForColumns = toColumn > column ? 1 : -1;
+        int currentLine = line + stepForLines;
+        int currentColumn = column + stepForColumns;
+        while (currentLine != toLine) {
+            if (chessBoard.board[currentLine][currentColumn] != null) return false;
+            currentLine += stepForLines;
+            currentColumn += stepForColumns;
+        }
+        return true;
     }
 }

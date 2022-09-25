@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e4f4334-6c96-461b-8f6f-bb2244d30498" name="Changes" comment="Changed move check in class Horse.">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="2e4f4334-6c96-461b-8f6f-bb2244d30498" name="Changes" comment="Changed move check in class Pawn.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dev/akuniutka/skillfactory/chess/Bishop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/akuniutka/skillfactory/chess/Bishop.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +45,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664113194817</updated>
-      <workItem from="1664113196557" duration="7349000" />
+      <workItem from="1664113196557" duration="8317000" />
     </task>
     <task id="LOCAL-00001" summary="Abstract ChessPiece class created.">
       <created>1664113451913</created>
@@ -110,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664135615032</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Changed move check in class Pawn.">
+      <created>1664135972208</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1664135972208</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +144,7 @@
     <MESSAGE value="Added README." />
     <MESSAGE value="Changed check if move is out of the board and if cell is occcupied by the same color." />
     <MESSAGE value="Changed move check in class Horse." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed move check in class Horse." />
+    <MESSAGE value="Changed move check in class Pawn." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed move check in class Pawn." />
   </component>
 </project>

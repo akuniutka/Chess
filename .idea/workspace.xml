@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2e4f4334-6c96-461b-8f6f-bb2244d30498" name="Changes" comment="Changed move check in class Bishop.">
+    <list default="true" id="2e4f4334-6c96-461b-8f6f-bb2244d30498" name="Changes" comment="Changed move check in class Rook.">
+      <change afterPath="$PROJECT_DIR$/src/dev/akuniutka/skillfactory/chess/Queen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dev/akuniutka/skillfactory/chess/Rook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dev/akuniutka/skillfactory/chess/Rook.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +45,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664113194817</updated>
-      <workItem from="1664113196557" duration="9493000" />
+      <workItem from="1664113196557" duration="10867000" />
     </task>
     <task id="LOCAL-00001" summary="Abstract ChessPiece class created.">
       <created>1664113451913</created>
@@ -124,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664136718183</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Changed move check in class Rook.">
+      <created>1664138213148</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1664138213148</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +160,7 @@
     <MESSAGE value="Changed move check in class Horse." />
     <MESSAGE value="Changed move check in class Pawn." />
     <MESSAGE value="Changed move check in class Bishop." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed move check in class Bishop." />
+    <MESSAGE value="Changed move check in class Rook." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed move check in class Rook." />
   </component>
 </project>

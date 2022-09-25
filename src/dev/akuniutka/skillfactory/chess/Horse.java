@@ -19,13 +19,7 @@ public class Horse extends ChessPiece {
         if (isOutsideOfBoard(toLine, toColumn)) return false;
         if (isOccupiedBySameColor(chessBoard, toLine, toColumn)) return false;
 
-        if (Math.abs(toLine - line) == 2 && Math.abs(toColumn - column) == 1) {
-            return true;
-        } else if (Math.abs(toLine - line) == 1 && Math.abs(toColumn - column) == 2) {
-            return true;
-        } else {
-            return false;
-        }
+        return Math.abs(toLine - line) * Math.abs(toColumn - column) == 2;
     }
 
     @Override

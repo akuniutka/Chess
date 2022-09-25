@@ -16,13 +16,8 @@ public class Bishop extends ChessPiece {
 
     @Override
     public boolean canMoveToPosition(ChessBoard chessBoard, int line, int column, int toLine, int toColumn) {
-        if (!chessBoard.checkPos(toLine) || !chessBoard.checkPos(toColumn)) {
-            return false;
-        } else if (chessBoard.board[toLine][toColumn] != null) {
-            if (color.equals(chessBoard.board[toLine][toColumn].getColor())) {
-                return false;
-            }
-        }
+        if (isOutsideOfBoard(toLine, toColumn)) return false;
+        if (isOccupiedBySameColor(chessBoard, toLine, toColumn)) return false;
 
         if (Math.abs(toLine - line) != Math.abs(toColumn - column)) {
             return false;
@@ -45,5 +40,15 @@ public class Bishop extends ChessPiece {
     @Override
     public String getSymbol() {
         return "B";
+    }
+
+    private boolean isOutsideOfBoard(int line, int column) {
+        return line < 0 || line > 7 || column < 0 || column > 7;
+    }
+
+    private boolean isOccupiedBySameColor(ChessBoard chessBoard, int line, int column) {
+        ChessPiece chessPiece = chessBoard.board[line][column];
+        if (chessPiece == null) return false;
+        return color.equals(chessPiece.getColor());
     }
 }

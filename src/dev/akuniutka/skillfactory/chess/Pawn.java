@@ -26,17 +26,11 @@ public class Pawn extends ChessPiece {
                 return true;
             } else if (color.equals("White") && toLine - line == 1) {
                 return true;
-            } else if (color.equals("Black") && toLine - line == -1) {
-                return true;
-            }
-            return false;
+            } else return color.equals("Black") && toLine - line == -1;
         } else if (Math.abs(toColumn - column) == 1 && chessBoard.board[toLine][toColumn] != null) {
             if (color.equals("White") && toLine - line == 1) {
                 return true;
-            } else if (color.equals("Black") && toLine - line == -1) {
-                return true;
-            }
-            return false;
+            } else return color.equals("Black") && toLine - line == -1;
         } else {
             return false;
         }

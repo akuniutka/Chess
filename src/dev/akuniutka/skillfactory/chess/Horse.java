@@ -8,7 +8,7 @@ public class Horse extends ChessPiece {
         super(color);
     }
 
-
+    // TODO move implementation to ChessPiece
     @Override
     public String getColor() {
         return color;
@@ -27,10 +27,13 @@ public class Horse extends ChessPiece {
         return "H";
     }
 
+
+    // TODO move method to ChessPiece
     private boolean isOutsideOfBoard(int line, int column) {
         return line < 0 || line > 7 || column < 0 || column > 7;
     }
 
+    // TODO move method to ChessPiece
     private boolean isOccupiedBySameColor(ChessBoard chessBoard, int line, int column) {
         ChessPiece chessPiece = chessBoard.board[line][column];
         if (chessPiece == null) return false;

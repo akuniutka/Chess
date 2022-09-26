@@ -34,6 +34,7 @@ public class King extends ChessPiece {
             for (int j = 0; j < 8; j++) {
                 chessPiece = board.board[i][j];
                 if (chessPiece == null) continue;
+                if (chessPiece.getSymbol().equals("P") && j == column) continue;
                 if (chessPiece.canMoveToPosition(board, i, j, line, column)) return true;
             }
         }
